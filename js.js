@@ -31,6 +31,24 @@ function generate(){
     else if(choiceValue === "3"){
         output = `${input.indexOf(" ")+1} , ${input.lastIndexOf(" ")} , ${input.substring(input.indexOf(" ")+1 , input.lastIndexOf(" "))} `;
     }
+    else if(choiceValue === "4"){
+        // output = input.endsWith(".png") || input.endsWith(".jpg");
+        // if(output){
+        //     output = "this file is a png or jpg ";
+        // }else {
+        //     output = "this file is not a png or jpg ";
+        // }
+        //a different way of doing it
+        if(input.endsWith(".png")){
+            output = "this file is a png";
+        } else if(input.endsWith(".jpg")) {
+            output = "this file is a jpg";
+        } else {
+            output = "this file isn't a png or a jpg"
+        }
+
+
+    }
     
     
     console.log(output);
