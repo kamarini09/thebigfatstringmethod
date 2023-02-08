@@ -46,8 +46,13 @@ function generate(){
         } else {
             output = "this file isn't a png or a jpg"
         }
-
-
+      
+    }
+    else if(choiceValue === "5"){
+        // let number = Number(input.length);
+        // let ast = "*"
+        // output = ast.repeat(number);
+        output = "*".repeat(input.length);
     }
     
     
