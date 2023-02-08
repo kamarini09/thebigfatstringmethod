@@ -54,6 +54,10 @@ function generate(){
         // output = ast.repeat(number);
         output = "*".repeat(input.length);
     }
+
+    else if(choiceValue === "6"){
+        output = input.replace(input.charAt(2) , input.charAt(2).toUpperCase());
+    }
     
     
     console.log(output);
