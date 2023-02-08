@@ -9,9 +9,9 @@ function getInput(){
 
 function generate(){
     const input = document.querySelector("input#input").value;
-    const choice = document.querySelector("option");
+    const choice = document.getElementById("choice");
     const choiceValue = choice.value;
-    let output = "unused value";
+    let output = "";
     console.log(choiceValue);
     console.log(input);
     
@@ -20,7 +20,11 @@ function generate(){
     if (choiceValue === "0"){
         output = input.charAt(0).toUpperCase() + input.substring(1).toLowerCase();
         
-    } else (value === ";");
+    } 
+    else if(choiceValue === "1"){
+        output = input.substring(0,input.indexOf(" "));
+    }
+    
     
     
     console.log(output);
