@@ -12,8 +12,8 @@ function generate(){
     const choice = document.getElementById("choice");
     const choiceValue = choice.value;
     let output = "";
-    console.log(choiceValue);
-    console.log(input);
+    // console.log(choiceValue);
+    // console.log(input);
     
     
     //If input is a first name: Make the first character in a name uppercase, and the rest lowercase
@@ -57,6 +57,14 @@ function generate(){
 
     else if(choiceValue === "6"){
         output = input.replace(input.charAt(2) , input.charAt(2).toUpperCase());
+    }
+    
+    else if(choiceValue === "7"){
+        let str1 = `${input.indexOf(" ")}`;
+        console.log(str1);
+        let str2 = input.charAt(6).toUpperCase();
+        console.log(str2);
+        output = input.replace(input.charAt(6), str2);
     }
     
     
