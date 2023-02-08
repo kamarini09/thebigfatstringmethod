@@ -25,6 +25,9 @@ function generate(){
         output = input.substring(0,input.indexOf(" "));
     }
     
+    else if(choiceValue === "2"){
+        output = input.substring(0,input.indexOf(" ")).length;
+    }
     
     
     console.log(output);
