@@ -28,6 +28,9 @@ function generate(){
     else if(choiceValue === "2"){
         output = input.substring(0,input.indexOf(" ")).length;
     }
+    else if(choiceValue === "3"){
+        output = `${input.indexOf(" ")+1} , ${input.lastIndexOf(" ")} , ${input.substring(input.indexOf(" ")+1 , input.lastIndexOf(" "))} `;
+    }
     
     
     console.log(output);
